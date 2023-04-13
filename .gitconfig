@@ -1,0 +1,19 @@
+[user]
+	email = chris.e.kolaczkowski@medtronic.com
+	name = Chris Kolaczkowski
+[merge]
+	tool = kdiff3
+#[mergetool "kdiff3"]
+#    cmd = kdiff3 $BASE $LOCAL $REMOTE -o $MERGED
+[push]
+	default = simple
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+#    lg = log --oneline --pretty=format:'%h %ad | [%an] %s%d' --graph --date=short
+    ab = rev-list --left-right --count
+[core]
+	excludesfiles = /home/kolacc1/.gitignore
+
+[diff]
+    wordRegex = [^[:space:],]+
+
