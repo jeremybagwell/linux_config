@@ -14,7 +14,7 @@ git config --global credential.helper cache
 sudo apt update
 sudo apt install google-chrome-stable=102.0.5005.115-1
 
-cd ~/projs/
+cd home/stealthadmin/projs/
 git clone https://code.medtronic.com/ET/app/StealthApplication.git
 
 
@@ -44,7 +44,7 @@ cd ApplicationHome
 mv /VERSION /VERSION-BACKUP
 
 # Creating a new file called /VERSION with the string "MNav 0s"
-echo "MNav 0s" > /VERSION
+echo "JUNO OS 3.0.0-45" > /VERSION
 
 # Set up Database in ApplicationHome component repo
 cd ApplicationHome

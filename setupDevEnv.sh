@@ -35,4 +35,4 @@ sudo apt-get install debhelper
 
 sudo cp -v .bashrc ~/.bashrc
 
-sudo ./setupApp.sh
+sudo ~/projs/linux_config/setupApp.sh
