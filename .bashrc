@@ -167,3 +167,13 @@ export GOPATH=/home/kolacc1/src/ziehmulator
 ## PYTHON
 #################################
 export PYTHONPATH=PYTHONPATH:~/lib/python
+
+# Add nodejs to your path. Make sure to put it BEFORE $PATH, to ensure bash finds the mnav nodejs before any others you may have installed
+export PATH=/opt/mnav/nodejs/bin:$PATH
+ 
+ 
+# Set the prefix environment variable. This tells node where to install global packages
+export NPM_CONFIG_PREFIX=~/.npm-global
+ 
+# Add the global bin directory to your path in your .bashrc:
+export PATH=$PATH:~/.npm-global/bin
