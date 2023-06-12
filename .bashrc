@@ -134,15 +134,16 @@ export PATH=$(getconf PATH)
 export PATH=$PATH:/sbin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:/home/kolacc1/ccollab-cmdline
-export PATH=$PATH:/home/kolacc1/bin/
-#export PATH=$PATH:/home/kolacc1/bin/chainsaw2.1/apache-chainsaw-2.1.0-SNAPSHOT/bin
-export PATH=$PATH:/opt/mnav/lib/qt5/bin/
-export PATH=$PATH:/usr/totalview/bin/
-export PATH=$PATH:${PROJECT_ROOT}/dist/product/release/bin
-#export PATH=$PATH:/home/kolacc1/Qt/Tools/QtCreator/bin
-export PATH=$PATH:/home/kolacc1/kw/bin
-export PATH=$PATH:/home/kolacc1/git/chrisk/bin/Typora-linux-x64/
+export PATH=/opt/mnav/nodejs/bin:$PATH
+# export PATH=$PATH:/home/kolacc1/ccollab-cmdline
+# export PATH=$PATH:/home/kolacc1/bin/
+# #export PATH=$PATH:/home/kolacc1/bin/chainsaw2.1/apache-chainsaw-2.1.0-SNAPSHOT/bin
+# export PATH=$PATH:/opt/mnav/lib/qt5/bin/
+# export PATH=$PATH:/usr/totalview/bin/
+# export PATH=$PATH:${PROJECT_ROOT}/dist/product/release/bin
+# #export PATH=$PATH:/home/kolacc1/Qt/Tools/QtCreator/bin
+# export PATH=$PATH:/home/kolacc1/kw/bin
+# export PATH=$PATH:/home/kolacc1/git/chrisk/bin/Typora-linux-x64/
 }
 
 setPath
