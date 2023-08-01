@@ -16,8 +16,7 @@ sudo apt install code # or code-insiders
 sudo apt-get install net-tools
 sudo /opt/mnav/config-networking/scripts/iptablesctl disable
 
-cd ..
-git clone https://code.medtronic.com/ET/ns/mnav-remotesupport-visualase
+(cd .. && git clone https://code.medtronic.com/ET/ns/mnav-remotesupport-visualase)
 
 
 # Json for C++ includes
@@ -25,8 +24,8 @@ sudo apt-get install libjsoncpp-dev
 sudo ln -s /usr/include/jsoncpp/json/ /usr/include/json
 
 #Access to VPN
-sudo apt install openconnect
-openconnect --user=bagwej2 --passwd-on-stdin --protocol=nc --authenticate https://developer-amer.medtronic.com/scs
+# sudo apt install openconnect
+# openconnect --user=bagwej2 --passwd-on-stdin --protocol=nc --authenticate https://developer-amer.medtronic.com/scs
 
 sudo apt-get install virturalbox
 sudo apt-get install make
@@ -35,4 +34,4 @@ sudo apt-get install debhelper
 
 sudo cp -v .bashrc ~/.bashrc
 
-sudo ~/projs/linux_config/setupApp.sh
+~/projs/linux_config/setupApp.sh
