@@ -1,7 +1,7 @@
 # Update your apt sources via this -dev package. Make sure to specify at least this versions
-sudo apt install mnav-config-apt-sources-dev3=3.0.0-28
+# sudo apt install mnav-config-apt-sources-dev3=3.0.0-28
 sudo apt update
-sudo apt install mnav-juno-dev
+sudo apt install -y mnav-juno-dev
 
 # Set username/email -- Used in your commit messages to ID you as author
 git config --global user.name "Jeremy Bagwell"
@@ -12,7 +12,7 @@ git config --global user.email jeremy.r.bagwell@medtronic.com
 git config --global credential.helper cache
 
 sudo apt update
-sudo apt install google-chrome-stable=102.0.5005.115-1
+sudo apt install -y google-chrome-unstable=117.0.5911.2-1
 
 cd /home/stealthadmin/projs/
 git clone https://code.medtronic.com/ET/app/StealthApplication.git
@@ -28,12 +28,8 @@ mgit clone
 
 export PATH=/opt/mnav/nodejs/bin:$PATH
 
-cd ApplicationHome
-./development/setupDevEnv
+(cd ApplicationHome && ./development/setupDevEnv)
 
-# From top-level StealthApp Repo
- cd ..
- 
 # 1. Generate the build system with CMake-default
 ./configure.sh
  
@@ -47,5 +43,4 @@ cd ApplicationHome
 # echo "JUNO OS 3.0.0-45" > /VERSION
 
 # Set up Database in ApplicationHome component repo
-cd ApplicationHome
-./development/updateDB
+(cd ApplicationHome && ./development/updateDB)
